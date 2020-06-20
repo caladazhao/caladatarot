@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #262626;
+  font-family: "Noto Sans TC";
+}
+
+body {
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.cv {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: calc(100%-50px);
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #021238;
+  position: absolute;
+  margin: 50px;
+  overflow: hidden;
+}
+
+.cvCard {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+}
+
+.card {
+  display: -webkit-box;
+  display: flex;
+  background-color: #021238;
+  border: solid 3px #00b2db;
+  overflow: hidden;
+}
+.card .left {
+  -webkit-box-flex: 5;
+          flex: 5;
+  padding-right: 10px;
+  background-color: #021238;
+  padding: 20px;
+  color: white;
+  padding: 50px;
+  position: relative;
+}
+.card .left .text h3 {
+  color: #ffd6b8;
+  font-size: 18pt;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.card .left .text h4 {
+  color: #ffd6b8;
+  letter-spacing: 2px;
+}
+.card .left .text p {
+  font-size: 8pt;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.card .left .bar h3 {
+  color: #ffd6b8;
+  letter-spacing: 2px;
+  font-size: 12pt;
+}
+.card .logo {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -1%;
+  background-image: linear-gradient(-120deg, #6affec, #fdd4ff, #7fc7ff);
+  left: 75%;
+  border-radius: 50%;
+}
+.card .right {
+  -webkit-box-flex: 7;
+          flex: 7;
+  padding-left: 10px;
+  padding: 50px;
+  background-color: #021238;
+  font-family: "Noto Sans TC";
+  font-weight: 100;
+  color: #fff;
+  font-size: 10pt;
+  border-left: solid 1px #00b2db;
+  margin: 30px 0px;
+}
+.card .right .experience {
+  margin-top: 30%;
+}
+.card .right .slogan {
+  padding: 30px;
+  margin-top: 20%;
+}
+.card .right .slogan h3 {
+  margin: 0;
+  letter-spacing: 3px;
+}
+.card .right h3 {
+  font-size: 12pt;
+  color: #ffd6b8;
+  margin-bottom: 10px;
+}
+.card .text h1 {
+  color: #efefef;
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+}
+.card .text h3, .card .text h4 {
+  margin: 0px;
+}
+.card .btn {
+  width: 80px;
+  height: 40px;
+  padding: 2px 5px;
+  border: solid 3px #00b2db;
+  background-color: transparent;
+  outline: none;
+  font-family: "Noto Sans TC";
+  color: #00b2db;
+  font-size: 10pt;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-animation-name: btna;
+          animation-name: btna;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.card .btn:hover {
+  background-color: rgba(0, 178, 219, 0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.card .btn:hover a {
+  color: white;
+}
+.card a {
+  text-decoration: none;
+  color: #00b2db;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12pt;
+  letter-spacing: 1px;
+}
+.card .bar h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.card .bar .barLine {
+  width: 60%;
+  height: 10px;
+  border: solid 1px #00af91;
+  border-radius: 5px;
+  margin: 0;
+}
+.card .bar .barLine .value.tarot {
+  width: 80%;
+  height: 8px;
+  background-color: #b6f8ff;
+  -webkit-animation: bar1 4s;
+          animation: bar1 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.card .bar .barLine .value.people {
+  width: 50%;
+  height: 8px;
+  background-color: #b6f8ff;
+  -webkit-animation: bar2 4s ease;
+          animation: bar2 4s ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@-webkit-keyframes bar1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes bar1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@-webkit-keyframes bar2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes bar2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+.card .skill {
+  display: -webkit-box;
+  display: flex;
+}
+.card .skill li {
+  width: 50%;
+  font-size: 10pt;
+  font-weight: 200;
+  padding: 5px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.card .skill ul {
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10%;
+  width: 100%;
+}
+.card .skill .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 175, 145, 0.5);
+}
+.card .skill .circle::after {
+  content: "";
+  display: block;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #021238;
+  left: 50%;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: relative;
+}
+.card .skill .p90 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  background-color: #00af91;
+}
+.card .skill .p180 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  background-color: #00af91;
+}
+.card .skill .p270 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  background-color: #00af91;
+}
+.card .skill .p360 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  background-color: #00af91;
+}
+@-webkit-keyframes btna {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@keyframes btna {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}

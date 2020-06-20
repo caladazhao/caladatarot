@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap')
+html,body
+  width: 100%
+  height: 100%
+  margin: 0px
+  background-color: #262626
+  font-family: "Noto Sans TC"
+body
+  letter-spacing: 1px
+  line-height: 28px
+  
+  
+// *
+//   border: solid 1px black
+.cv
+  display: flex
+  justify-content: center
+  width: calc(100%-50px)
+  align-items: center
+  background-color: #021238
+  position: absolute
+  margin: 50px
+  overflow: hidden
+.cvCard
+  padding: 50px
+  width: 100%
+  height: 100%
+  display: flex
+  overflow: hidden
+.card
+  display: flex
+  background-color: #021238
+  border: solid 3px #00b2db
+  overflow: hidden
+
+
+
+
+  
+
+  
+  
+  
+  .left
+    flex: 5
+    padding-right: 10px
+    background-color: #021238
+    padding: 20px
+    color: white
+    padding: 50px
+    position: relative
+    .text
+      h3
+        color: #ffd6b8
+        font-size: 18pt
+        margin-bottom: 5px
+        letter-spacing: 2px
+      h4
+        color: #ffd6b8
+        letter-spacing: 2px
+      p
+        font-size: 8pt
+        font-weight: 200
+        letter-spacing: 2px
+    .bar
+      h3
+        color: #ffd6b8
+        letter-spacing: 2px
+        font-size: 12pt
+  .logo
+    width: 250px
+    height: 250px
+    position: absolute
+    top: -1%
+    background-image: linear-gradient(-120deg,#6affec,#fdd4ff,#7fc7ff)
+    left: 75%
+    border-radius: 50%
+  .right
+    flex: 7
+    padding-left: 10px
+    padding: 50px
+    background-color: #021238
+    font-family: "Noto Sans TC"
+    font-weight: 100
+    color: #fff
+    font-size: 10pt
+    border-left: solid 1px #00b2db
+ 
+    margin: 30px 0px
+    .experience
+      margin-top: 30%
+    .slogan
+      padding: 30px
+      margin-top: 20%
+      h3
+        margin: 0
+        letter-spacing: 3px
+        
+    h3
+      font-size: 12pt
+      color: #ffd6b8
+      margin-bottom: 10px
+  .text
+    
+    h1
+      color: #efefef
+      font-family: "Noto Sans TC"
+      font-weight: 500
+
+    h3,h4
+      margin: 0px
+    
+  .btn
+    width: 80px
+    height: 40px
+    padding: 2px 5px
+    border: solid 3px #00b2db
+    background-color: transparent
+    outline: none
+    font-family: "Noto Sans TC"
+    color: #00b2db 
+    font-size: 10pt
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    animation-name: btna
+    animation-duration: 0.8s
+    animation-direction: alternate
+    animation-timing-function: ease-in-out
+    animation-delay: 1s
+    animation-iteration-count: infinite
+    
+ 
+  .btn:hover
+    background-color: rgba(#00b2db,0.5)
+    transition: 1s
+    a
+      color: white
+ 
+      
+
+    
+   
+  a
+      text-decoration: none
+      color: #00b2db
+      width: 80px
+      height: 40px
+      line-height: 40px
+      text-align: center
+      font-size: 12pt
+      letter-spacing: 1px
+  .bar
+    h3
+      margin: 0
+      margin-bottom: 5px
+      margin-top: 5px
+    .barLine
+      width: 60%
+      height: 10px
+      border: solid 1px #00af91
+      border-radius: 5px
+      margin: 0
+      .value.tarot
+        width: 80%
+        height: 8px
+        background-color: #b6f8ff
+        animation: bar1 4s
+        animation-delay: 1s
+      .value.people
+        width: 50%
+        height: 8px
+        background-color: #b6f8ff
+        animation: bar2 4s ease
+        animation-delay: 2s
+   
+  @keyframes bar1
+    from
+      width: 0%
+    to
+      width: 80%
+  @keyframes bar2
+    from
+      width: 0%
+    to
+      width: 50%
+    
+        
+        
+   
+        
+        
+    
+    
+   
+    
+    
+ 
+      
+
+   
+  
+    
+  .skill
+    display: flex
+ 
+    li
+      width: 50%
+      font-size: 10pt
+      font-weight: 200
+      padding: 5px
+      box-sizing: border-box
+      display: flex
+      justify-content: center
+      align-items: center
+      
+      flex-direction: column
+  
+      
+      
+      
+  .skill
+    ul
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+      margin-right: 10%
+      width: 100%
+     
+
+    .circle
+      width: 50px
+      height: 50px
+      background-color: #fff
+      border-radius: 50%
+      position: relative
+      overflow: hidden
+      background-color: rgba(#00af91,0.5)
+    
+
+    .circle::after
+      content: ""
+      display: block
+      width: calc(100% - 20px)
+      height: calc(100% - 20px)      
+      background-color: #021238 
+      left: 50%
+      border-radius: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      position: relative
+    .p90
+      width: 25px
+      height:  25px
+      position: absolute
+      background-color: #fff
+      left: 50%
+      background-color: #00af91
+    .p180
+      width: 25px
+      height:  25px
+      position: absolute
+      background-color: #fff
+      left: 50%
+      top: 50%
+      background-color: #00af91
+    .p270
+      width: 25px
+      height:  25px
+      position: absolute
+      background-color: #fff
+      top: 50%
+      background-color: #00af91
+    .p360
+      width: 25px
+      height:  25px
+      position: absolute
+      background-color: #fff
+      background-color: #00af91
+  @keyframes btna
+    from
+      transform: scale(1)
+ 
+    to
+      transform: scale(1.1)
+
+
+    
+
+      
+      
+    
+     
+    
